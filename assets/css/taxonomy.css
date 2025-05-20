@@ -302,3 +302,51 @@ html, body {
   margin: 0 auto 24px;
   max-width: 960px;
 }
+
+.bibtex-header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+#bibtex-block {
+  margin: 0;
+  flex: 1;
+  font-size: 0.97em;
+  background: #222;
+  color: #f8f8f2;
+  border-radius: 6px;
+  padding: 12px 16px 12px 12px;
+  overflow-x: auto;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+}
+
+.copy-bibtex-btn {
+  background: #a62b2b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 11px;
+  font-size: 1.15em;
+  margin-top: 10px;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.12s;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(166,43,43,0.10);
+  display: flex;
+  align-items: center;
+}
+
+.copy-bibtex-btn:hover,
+.copy-bibtex-btn:focus {
+  background: #d4551d;
+  color: #fffbe6;
+  transform: scale(1.08);
+}
+.copy-bibtex-btn:active {
+  background: #a62b2b;
+  transform: scale(0.98);
+}

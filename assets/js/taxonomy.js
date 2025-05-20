@@ -265,3 +265,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.querySelector('.copy-bibtex-btn');
+  const pre = document.getElementById('bibtex-block');
+  if (!btn || !pre) return;
+
+  btn.addEventListener('click', function() {
+    // Remove leading/trailing whitespace, keep formatting
+    const text = pre.textContent.trim();
+    navigator.clipboard.writeText(text).then(() => {
+      // Visual feedback: change icon
+      btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+      }, 1200);
+    });
+  });
+});
