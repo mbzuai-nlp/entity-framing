@@ -7,6 +7,11 @@
   --widget-outline: #000000;
   --widget-text: #000;
   --tooltip-bg: rgba(255, 255, 255, 0.9);
+  --card-bg: #f7fafc;
+  --card-gradient: linear-gradient(120deg, #f7fafc 70%, #f2f6fa 100%);
+  --bibtex-bg: #f7fafc;
+  --bibtex-text: #181d22;
+  --bibtex-heading: #181d22;
 }
 
 .dark-theme {
@@ -17,7 +22,14 @@
   --widget-outline: #888;
   --widget-text: #eee;
   --tooltip-bg: rgba(50, 50, 50, 0.9);
+  --card-bg: #262c34;
+  --card-gradient: linear-gradient(120deg, #23272d 60%, #23272c 100%);
+  --bibtex-bg: #181d22;
+  --bibtex-text: #f5faff;
+  --bibtex-heading: #f5faff;
 }
+
+
 
 html, body {
   margin: 0;
@@ -350,3 +362,70 @@ html, body {
   background: #a62b2b;
   transform: scale(0.98);
 }
+.authors-widget .acl-logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 96px;           /* Adjust size as you like */
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.paper-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.paper-hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 24px rgba(30,40,80,0.09);
+  /* Remove border-radius/box-shadow if you want it sharper */
+}
+.bibtex-cite-block {
+  background: #f8f8fc;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.card-widget {
+  background: linear-gradient(120deg, #f7fafc 70%, #f2f6fa 100%);
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(60, 70, 110, 0.10), 0 1.5px 5px rgba(60,70,110,0.05);
+  padding: 28px 20px;
+  margin: 40px auto 32px;
+  max-width: 980px;
+  transition: box-shadow 0.15s;
+}
+
+/* Optional: Make the taxonomy tree SVG fill the card neatly */
+#taxonomy-widget svg {
+  border-radius: 12px;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-widget {
+  background: var(--card-gradient, var(--card-bg));
+  color: var(--widget-text);
+  /* ...rest unchanged... */
+}
+
+.bibtex-cite-block {
+  background: var(--bibtex-bg);
+  color: var(--bibtex-text);
+  /* ...rest unchanged... */
+}
+
+/* For code blocks inside bibtex, force color too: */
+.bibtex-cite-block code,
+.bibtex-cite-block pre {
+  color: var(--bibtex-text) !important;
+  background: none !important; /* let parent .bibtex-cite-block handle bg */
+}
+
