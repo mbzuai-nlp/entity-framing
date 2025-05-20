@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Entity Framing Taxonomy</title>
+
+  <!-- 1) Load FA **before** your CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- 2) Then your theme CSS -->
   <link rel="stylesheet" href="assets/css/taxonomy.css" />
+
 </head>
+
 <body>
+  <!-- Theme toggle button -->
+  <!-- Theme toggle button -->
+<body>
+  <button id="theme-toggle" class="theme-toggle">
+    <i id="theme-icon" class="fa-solid fa-moon"></i>
+  </button>
+
+<!-- Paper Overview -->
+<section class="widget-container authors-widget">
+  <h2 class="paper-title">Entity Framing and Role Portrayal in the News</h2>
+
+  <p class="authors-list">
+    Tarek Mahmoud<sup>1</sup>,
+    Zhuohan Xie<sup>1</sup>,
+    Dimitar Dimitrov<sup>2</sup>,
+    Nikolaos Nikolaidis<sup>3</sup>,
+    Purificação Silvano<sup>4</sup>,
+    Roman Yangarber<sup>5</sup>,
+    Shivam Sharma<sup>6</sup>,
+    Elisa Sartori<sup>7</sup>,
+    Nicolas Stefanovitch<sup>8</sup>,
+    Giovanni Da San Martino<sup>7</sup>,
+    Jakub Piskorski<sup>9</sup>,
+    Preslav Nakov<sup>1</sup>
+  </p>
+
+  <p class="affiliations">
+    <sup>1</sup>MBZUAI (Mohamed bin Zayed University of AI), Abu Dhabi, UAE<br>
+    <sup>2</sup>Sofia University “St. Kliment Ohridski”, Sofia, Bulgaria
+    <sup>3</sup>Athens University of Economics and Business, Athens, Greece
+    <sup>4</sup>University of Porto, Porto, Portugal
+    <sup>5</sup>University of Helsinki, Helsinki, Finland
+    <sup>6</sup>Indian Institute of Technology Delhi, New Delhi, India
+    <sup>7</sup>University of Padova, Padova, Italy
+    <sup>8</sup>European Commission Joint Research Centre, Ispra, Italy
+    <sup>9</sup>Institute of Computer Science, Polish Academy of Sciences, Warsaw, Poland
+  </p>
+
+  <p class="emails">
+    <br>
+    <a href="mailto:tarek.mahmoud@mbzuai.ac.ae">tarek.mahmoud@mbzuai.ac.ae</a>,
+    <a href="mailto:preslav.nakov@mbzuai.ac.ae">preslav.nakov@mbzuai.ac.ae</a>
+  </p>
+
+  <ul class="presentations">
+    <li><i class="fa-solid fa-thumbtack"></i>
+      ACL 2025 - Vienna, Austria
+    </li>
+  </ul>
+
+    
+</section>
+
+<!-- Paper Info and Abstract Section -->
+<section class="widget-container paper-info-widget">
+<header class="paper-header">
+  <a class="arxiv-link" href="https://arxiv.org/abs/2502.14718" target="_blank" rel="noopener" title="View on arXiv">
+    <span class="arxiv-badge" aria-label="arXiv">
+  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="20" fill="#fff"/>
+    <text x="20" y="26" text-anchor="middle" font-size="13" font-family="monospace,Arial,sans-serif" font-weight="bold" fill="#a62b2b">arXiv</text>
+  </svg>
+</span>
+    <span class="arxiv-label">Read the paper on arXiv</span>
+    <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+  </a>
+</header>
+  <h4>Key Contributions</h4>
+  <ul id="contributions">
+    <li>Release of a novel multilingual dataset with hierarchical entity‐role annotations.</li>
+    <li>A comprehensive taxonomy of 22 archetypes under three main roles.</li>
+    <li>Detailed corpus statistics across languages, domains, and roles.</li>
+    <li>Benchmarks using fine‐tuned multilingual transformers and hierarchical zero‐shot LLMs.</li>
+  </ul>
+
+  <h4>Dataset</h4>
+  <ul>
+    <li><b>Languages:</b> Bulgarian, English, Hindi, European Portuguese, Russian</li>
+    <li><b>Domains:</b> Ukraine-Russia War, Climate Change</li>
+    <li><b>Annotations:</b> 5,800+ entity mentions labeled with roles</li>
+    <li><b>Novel Taxonomy:</b> 22 fine-grained roles under three main categories</li>
+  </ul>
+
+  <h4>Citation</h4>
+  <p>If you use our work, please cite:</p>
+  <pre><code class="language-bibtex">@misc{mahmoud2025entityframingroleportrayal,
+  title={Entity Framing and Role Portrayal in the News}, 
+  author={Tarek Mahmoud and Zhuohan Xie and Dimitar Dimitrov and Nikolaos Nikolaidis and Purificação Silvano and Roman Yangarber and Shivam Sharma and Elisa Sartori and Nicolas Stefanovitch and Giovanni Da San Martino and Jakub Piskorski and Preslav Nakov},
+  year={2025},
+  eprint={2502.14718},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2502.14718}, 
+}</code></pre>
+</section>
+
+
+
+  <!-- Widget container for taxonomy -->
+  <section id="taxonomy-widget" class="widget-container card-widget">
+  <header><h3>Entity Framing Taxonomy</h3></header>
   <div id="taxonomy"></div>
+</section>
 
-  <!-- Load D3 from CDN first -->
+
+  <!-- Other components can go here
+  <section class="widget-container">
+    <header><h3>Another Component</h3></header>
+    <div id="other"></div>
+  </section> -->
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <!-- Then load your custom taxonomy script -->
   <script src="assets/js/taxonomy.js"></script>
+  <script src="assets/js/stats.js"></script>
+
 </body>
+
 </html>
-
-

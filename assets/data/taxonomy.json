@@ -21,31 +21,51 @@
                     "name": "Martyr",
                     "definition": "Martyrs or saviors who sacrifice their well-being, or even their lives, for a greater good or cause. These individuals are often celebrated for their selflessness and dedication. This is mostly in politics, not in climate change.",
                     "conceptual": "Civil rights leaders like Martin Luther King Jr., who was assassinated while fighting for equality, or journalists who risk their lives to report on corruption and injustice.",
-                    "example": "Russia’s 2022 invasion, both sides discussed a deal that would have seen Russia withdraw to prewar lines in exchange for Ukraine forgoing NATO membership. Yet, Ukraine pressed on, enduring immense hardship in defense of its sovereignty and democratic ideals."
+                    "example": "Russia’s 2022 invasion, both sides discussed a deal that would have seen Russia withdraw to prewar lines in exchange for Ukraine forgoing NATO membership. Yet, Ukraine pressed on, enduring immense hardship in defense of its sovereignty and democratic ideals.",
+                    "highlight_span": [
+                        160,
+                        167
+                    ]
                 },
                 {
                     "name": "Peacemaker",
                     "definition": "Individuals who advocate for harmony, working tirelessly to resolve conflicts and bring about peace. They often engage in diplomacy, negotiations, and mediation. This is mostly in politics, not in climate change.",
                     "conceptual": "Nelson Mandela's efforts to reconcile South Africa post-apartheid, or diplomats working to broker peace deals between conflicting nations.",
-                    "example": "China has always asked for the ceasefire and the start of negotiations between Russia and Ukraine."
+                    "example": "China has always asked for the ceasefire and the start of negotiations between Russia and Ukraine.",
+                    "highlight_span": [
+                        0,
+                        5
+                    ]
                 },
                 {
                     "name": "Rebel",
                     "definition": "Rebels, revolutionaries, or freedom fighters who challenge the status quo and fight for significant change or liberation from oppression. They are often seen as champions of justice and freedom.",
                     "conceptual": "Leaders of independence movements like Mahatma Gandhi in India, or modern-day activists fighting for democratic reforms in authoritarian regimes. In the climate change domain, this includes characters such as Greta Thunberg or persons who chain themselves to trees to prevent deforestation.",
-                    "example": "In these terrible conditions and suffering caused by Russia, Ukraine will fight against the tyranny for the freedom of its people until victory will be achieved."
+                    "example": "In these terrible conditions and suffering caused by Russia, Ukraine will fight against the tyranny for the freedom of its people until victory will be achieved.",
+                    "highlight_span": [
+                        61,
+                        68
+                    ]
                 },
                 {
                     "name": "Underdog",
                     "definition": "Entities who are considered unlikely to succeed due to their disadvantaged position but strive against greater forces and obstacles. Their stories often inspire others.",
                     "conceptual": "Grassroots political candidates overcoming well-funded incumbents, or small nations standing up to larger, more powerful countries. In climate change, this could include new entities portrayed as underfunded organizations showing promise to make a positive impact.",
-                    "example": "Against overwhelming odds, Ukraine has continued to defy expectations. Despite facing a much larger and better-equipped Russian military, Ukrainian forces have mounted a fierce resistance, leveraging ingenuity, resilience, and international support to push back against aggression."
+                    "example": "Against overwhelming odds, Ukraine has continued to defy expectations. Despite facing a much larger and better-equipped Russian military, Ukrainian forces have mounted a fierce resistance, leveraging ingenuity, resilience, and international support to push back against aggression.",
+                    "highlight_span": [
+                        27,
+                        34
+                    ]
                 },
                 {
                     "name": "Virtuous",
                     "definition": "Individuals portrayed as virtuous, righteous, or noble, who are seen as fair, just, and upholding high moral standards. They are often role models and figures of integrity.",
                     "conceptual": "Judges known for their fairness, or politicians with a reputation for honesty and ethical behavior. In climate change, this includes leaders standing up for environmental ethical values to protect the planet, or activists pushing for environmental sustainability.",
-                    "example": "Russia is not fighting against the Ukrainian people. Russia is fighting against the criminal nationalist regime that came to power in 2014 after the coup in Kyiv, the diplomat said."
+                    "example": "Russia is not fighting against the Ukrainian people. Russia is fighting against the criminal nationalist regime that came to power in 2014 after the coup in Kyiv, the diplomat said.",
+                    "highlight_span": [
+                        53,
+                        59
+                    ]
                 }
             ]
         },
@@ -58,73 +78,121 @@
                     "name": "Instigator",
                     "definition": "Individuals or groups initiating conflict, often seen as the primary cause of tension and discord. They may provoke violence or unrest.",
                     "conceptual": "Politicians using inflammatory rhetoric to incite violence, or groups instigating protests to destabilize governments. In climate change (CC), activists like Greta Thunberg could be framed negatively as troublemakers or problem instigators.",
-                    "example": "On Monday, Belarussian President Alexander Lukashenko told Russian media the United States and the West are trying to “spark a conflict” with recent statements about a possible invasion."
+                    "example": "On Monday, Belarussian President Alexander Lukashenko told Russian media the United States and the West are trying to “spark a conflict” with recent statements about a possible invasion.",
+                    "highlight_span": [
+                        73,
+                        90
+                    ]
                 },
                 {
                     "name": "Conspirator",
                     "definition": "Those involved in plots and secret plans, often working behind the scenes to undermine or deceive others. They engage in covert activities to achieve their goals.",
                     "conceptual": "Figures involved in political scandals or espionage, such as Watergate conspirators or modern cyber espionage cases. In CC, this could be individuals or organizations conspiring to bypass environmental regulations for profit.",
-                    "example": "In September 2022, Sikorski, then a member of the European Parliament (MEP), insinuated that Washington was complicit in the attack on the Nord Stream gas pipeline."
+                    "example": "In September 2022, Sikorski, then a member of the European Parliament (MEP), insinuated that Washington was complicit in the attack on the Nord Stream gas pipeline.",
+                    "highlight_span": [
+                        93,
+                        103
+                    ]
                 },
                 {
                     "name": "Tyrant",
                     "definition": "Tyrants and corrupt officials who abuse their power, ruling unjustly and oppressing those under their control. They are often characterized by their authoritarian rule and exploitation.",
                     "conceptual": "Dictators like Kim Jong-un in North Korea, or corrupt officials embezzling public funds and suppressing dissent.",
-                    "example": "While I agree that Russia is an autocracy, Ukraine is also an autocracy. Zelensky has banned his opposition, shutdown independent media and arrested and tortured his political opponents."
+                    "example": "While I agree that Russia is an autocracy, Ukraine is also an autocracy. Zelensky has banned his opposition, shutdown independent media and arrested and tortured his political opponents.",
+                    "highlight_span": [
+                        73,
+                        81
+                    ]
                 },
                 {
                     "name": "Foreign Adversary",
                     "definition": "Entities from other nations or regions creating geopolitical tension and acting against the interests of another country. They are often depicted as threats to national security.",
                     "conceptual": "Rival nations involved in espionage or military confrontations, such as the Cold War adversaries, or countries accused of election interference. In CC, this includes countries like China being blamed for increasing CO2 emissions.",
-                    "example": "Sosoaca called on Romanian President Klaus Iohannis to prevent Zelensky, whom she described as an “arrogant and unconscionable traitor, including to his own country,” from addressing the Romanian parliament."
+                    "example": "Sosoaca called on Romanian President Klaus Iohannis to prevent Zelensky, whom she described as an “arrogant and unconscionable traitor, including to his own country,” from addressing the Romanian parliament.",
+                    "highlight_span": [
+                        63,
+                        71
+                    ]
                 },
                 {
                     "name": "Traitor",
                     "definition": "Individuals who betray a cause or country, often seen as disloyal and treacherous. Their actions are viewed as a significant breach of trust.",
                     "conceptual": "Whistleblowers revealing sensitive information for personal gain, or soldiers defecting to enemy forces. In contrast, positively framed whistleblowers would be categorized as Virtuous.",
-                    "example": "Zelensky wants Ukraine destroyed. There’s no sugar coating it."
+                    "example": "Zelensky wants Ukraine destroyed. There’s no sugar coating it.",
+                    "highlight_span": [
+                        0,
+                        8
+                    ]
                 },
                 {
                     "name": "Spy",
                     "definition": "Spies or double agents accused of espionage, gathering and transmitting sensitive information to a rival or enemy. They operate in secrecy and deception.",
                     "conceptual": "Historical figures like Aldrich Ames, who spied for the Soviet Union, or contemporary cases of corporate espionage.",
-                    "example": "Many people consider Arestovyč as a questionable figure involved in shady plots and espionage activities"
+                    "example": "Many people consider Arestovyč as a questionable figure involved in shady plots and espionage activities",
+                    "highlight_span": [
+                        21,
+                        30
+                    ]
                 },
                 {
                     "name": "Saboteur",
                     "definition": "Saboteurs who deliberately damage or obstruct systems, processes, or organizations to cause disruption or failure. They aim to weaken or destroy targets from within.",
                     "conceptual": "Insiders tampering with critical infrastructure, or activists sabotaging industrial operations.",
-                    "example": "In September 2022, Sikorski, then a member of the European Parliament (MEP), insinuated that Washington was complicit in the attack on the Nord Stream gas pipeline."
+                    "example": "In September 2022, Sikorski, then a member of the European Parliament (MEP), insinuated that Washington was complicit in the attack on the Nord Stream gas pipeline.",
+                    "highlight_span": [
+                        93,
+                        103
+                    ]
                 },
                 {
                     "name": "Corrupt",
                     "definition": "Individuals or entities that engage in unethical or illegal activities for personal gain, prioritizing profit or power over ethics.",
                     "conceptual": "Companies involved in environmental pollution, executives engaged in massive financial fraud, or politicians accepting bribes and engaging in graft.",
-                    "example": "Zaluzhny is a fitting representative, with blood on his hands. That he was appointed ambassador to the UK in March confirms the SEP’s insistence that a major escalation of NATO’s proxy war against Russia is being prepared."
+                    "example": "Zaluzhny is a fitting representative, with blood on his hands. That he was appointed ambassador to the UK in March confirms the SEP’s insistence that a major escalation of NATO’s proxy war against Russia is being prepared.",
+                    "highlight_span": [
+                        0,
+                        8
+                    ]
                 },
                 {
                     "name": "Incompetent",
                     "definition": "Entities causing harm through ignorance, lack of skill, or incompetence. This includes people committing foolish acts or making poor decisions due to lack of understanding or expertise. Their actions, often unintentional, result in significant negative consequences.",
                     "conceptual": "Leaders making reckless policy decisions without proper understanding, officials mishandling crisis responses, or managers whose poor judgment leads to organizational failures.",
-                    "example": "The first major attack on Russian territory since World War II, the Ukrainian Armed Forces' offensive in the Kursk region, has publicly humiliated Russian dictator Vladimir Putin."
+                    "example": "The first major attack on Russian territory since World War II, the Ukrainian Armed Forces' offensive in the Kursk region, has publicly humiliated Russian dictator Vladimir Putin.",
+                    "highlight_span": [
+                        164,
+                        178
+                    ]
                 },
                 {
                     "name": "Terrorist",
                     "definition": "Terrorists, mercenaries, insurgents, fanatics, or extremists engaging in violence and terror to further ideological ends, often targeting civilians. They are viewed as significant threats to peace and security. This is mostly in politics, not in CC.",
                     "conceptual": "Groups like ISIS or Al-Qaeda carrying out attacks, or lone-wolf terrorists committing acts of violence.",
-                    "example": "Looking forward, Derkach expects Ukraine to attempt more terrorist attacks against Russia, which the US public is being preconditioned to accept via the CIA’s various leaks to the media."
+                    "example": "Looking forward, Derkach expects Ukraine to attempt more terrorist attacks against Russia, which the US public is being preconditioned to accept via the CIA’s various leaks to the media.",
+                    "highlight_span": [
+                        33,
+                        40
+                    ]
                 },
                 {
                     "name": "Deceiver",
                     "definition": "Deceivers, manipulators, or propagandists who twist the truth, spread misinformation, and manipulate public perception for their own benefit. They undermine trust and truth.",
                     "conceptual": "Politicians spreading false information for political gain, or media outlets engaging in propaganda.",
-                    "example": "Florian Philippot, leader of the Patriots (Les Patriotes) party and a long-time critic of Western assistance to Ukraine has alleged that Zelensky was lying when he claimed that all US aid to his country “goes to the battlefield.”"
+                    "example": "Florian Philippot, leader of the Patriots (Les Patriotes) party and a long-time critic of Western assistance to Ukraine has alleged that Zelensky was lying when he claimed that all US aid to his country “goes to the battlefield.”",
+                    "highlight_span": [
+                        137,
+                        145
+                    ]
                 },
                 {
                     "name": "Bigot",
                     "definition": "Individuals accused of hostility or discrimination against specific groups. This includes entities committing acts falling under racism, sexism, homophobia, Antisemitism, Islamophobia, or any kind of hate speech. This is mostly in politics, not in CC.",
                     "conceptual": "Politicians accused of hate speech, officials enforcing discriminatory policies, or figures justifying xenophobia or intolerance.",
-                    "example": "An opportunity to resolve the conflict will appear only when Ukraine ceases to pose a threat to Russia and discriminate against Russian-speaking Ukrainians,” Vasily Nebenzya, Russia's Ambassador to the UN Security Council, said at a briefing at the UN Security Council."
+                    "example": "If we help Ukraine now, they can become the best business partner we ever dreamed of, ...” he added. Graham is treating Ukraine as a future colony of the US with his comments on the ownership of the country's natural resources, said Vladimir Dzhabarov... Take a look at Sputnik's infographics to see Ukraine's mineral resources that the West cotes so much.",
+                    "highlight_span": [
+                        120,
+                        127
+                    ]
                 }
             ]
         },
@@ -137,25 +205,41 @@
                     "name": "Forgotten",
                     "definition": "Marginalized or overlooked groups who are often ignored by society and do not receive the attention or support they need. This includes refugees, who face systemic neglect and exclusion.",
                     "conceptual": "Indigenous populations facing ongoing discrimination; homeless individuals struggling without adequate support; refugees fleeing conflict or persecution.",
-                    "example": "No one cares about Ukraine anymore, the West has already moved on."
+                    "example": "No one cares about Ukraine anymore, the West has already moved on.",
+                    "highlight_span": [
+                        19,
+                        26
+                    ]
                 },
                 {
                     "name": "Exploited",
                     "definition": "Individuals or groups used for others' gain, often without their consent and with significant detriment to their well-being. They are often victims of labor exploitation, trafficking, or economic manipulation.",
                     "conceptual": "Workers in sweatshops; victims of human trafficking; communities suffering from corporate exploitation of natural resources.",
-                    "example": "\"If we help Ukraine now, they can become the best business partner we ever dreamed of, ...” he added. Graham is treating Ukraine as a future colony of the US with his comments on the ownership of the country's natural resources, said Vladimir Dzhabarov... Take a look at Sputnik's infographics to see Ukraine's mineral resources that the West cotes so much."
+                    "example": "\"If we help Ukraine now, they can become the best business partner we ever dreamed of, ...” he added. Graham is treating Ukraine as a future colony of the US with his comments on the ownership of the country's natural resources, said Vladimir Dzhabarov... Take a look at Sputnik's infographics to see Ukraine's mineral resources that the West cotes so much.",
+                    "highlight_span": [
+                        12,
+                        19
+                    ]
                 },
                 {
                     "name": "Victim",
                     "definition": "People cast as victims due to circumstances beyond their control, specifically in two categories: (1) victims of physical harm, including natural disasters, acts of war, terrorism, mugging, physical assault, etc., and (2) victims of economic harm, such as sanctions, blockades, and boycotts. Their experiences evoke sympathy and calls for justice, focusing on either physical or economic suffering.",
                     "conceptual": "Victims of natural disasters, such as hurricanes or earthquakes; individuals affected by violent crimes. Victims of economic blockades, sanctions, or boycotts.",
-                    "example": "“We wanted to support the American proxy war to damage Russia. We spent millions of taxpayers’ euros fueling a war that does not serve our interests, helping to destroy Ukraine,” he said."
+                    "example": "“We wanted to support the American proxy war to damage Russia. We spent millions of taxpayers’ euros fueling a war that does not serve our interests, helping to destroy Ukraine,” he said.",
+                    "highlight_span": [
+                        169,
+                        176
+                    ]
                 },
                 {
                     "name": "Scapegoat",
                     "definition": "Entities blamed unjustly for problems or failures, often to divert attention from the real causes or culprits. They are made to bear the brunt of criticism and punishment without just cause.",
                     "conceptual": "Minority groups blamed for economic problems; political opponents accused of provoking national strife, without evidence.",
-                    "example": "Modernity.news reports: Much of the legacy media initially blamed Russia for attack, claiming it was a false flag but offering no sensible reason as to why Moscow would target its own energy infrastructure."
+                    "example": "Modernity.news reports: Much of the legacy media initially blamed Russia for attack, claiming it was a false flag but offering no sensible reason as to why Moscow would target its own energy infrastructure.",
+                    "highlight_span": [
+                        66,
+                        72
+                    ]
                 }
             ]
         }

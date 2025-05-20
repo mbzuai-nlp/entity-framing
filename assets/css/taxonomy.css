@@ -1,37 +1,304 @@
-  /* .node circle {
-    cursor: pointer;
-    stroke: #3182bd;
-    stroke-width: 1.5px;
-  } */
-  .node circle {
-    cursor: pointer;
-  }
-  .node text {
-    font: 14px sans-serif;
-  }
-  .link {
-    fill: none;
-    stroke: #555;
-    stroke-opacity: 0.4;
-    stroke-width: 1.5px;
-  }
-  /* Tooltip styling */
-  .tooltip {
-    position: absolute;
-    text-align: left;
-    width: 280px;
-    padding: 10px;
-    font: 13px sans-serif;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    pointer-events: none;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  }
-  .highlighted-entity {
-    background-color: yellow;
-    font-weight: bold;
-    padding: 0 2px;
-    border-radius: 2px;
-  }
-  
+/* Light & Dark Theme Variables */
+:root {
+  --page-bg: #fff;
+  --page-text: #000;
+  --widget-bg: #fff;
+  --widget-border: #ddd;
+  --widget-outline: #000000;
+  --widget-text: #000;
+  --tooltip-bg: rgba(255, 255, 255, 0.9);
+}
+
+.dark-theme {
+  --page-bg: #2e2e2e;
+  --page-text: #eee;
+  --widget-bg: #2e2e2e;
+  --widget-border: #555;
+  --widget-outline: #888;
+  --widget-text: #eee;
+  --tooltip-bg: rgba(50, 50, 50, 0.9);
+}
+
+html, body {
+  margin: 0;
+  padding-top: 60px;         /* or whatever top-padding you chose */
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  color:            var(--page-text);
+}
+
+
+/* Taxonomy & Widget Styles */
+.node circle {
+  cursor: pointer;
+}
+
+.node text {
+  font: 14px sans-serif;
+  fill: var(--widget-text);
+  /* Adapt text color to theme */
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: left;
+  width: 280px;
+  padding: 10px;
+  font: 13px sans-serif;
+  background: var(--tooltip-bg);
+  border: 1px solid var(--widget-border);
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: var(--widget-text);
+}
+
+.highlighted-entity {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.widget-container {
+  margin: 60px auto 24px;
+  /* 60px top instead of 0 */
+
+  background-color: var(--widget-bg);
+  border: 1px solid var(--widget-border);
+  outline: 2px solid var(--widget-outline);
+  color: var(--widget-text);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 auto 24px;
+  max-width: 960px;
+}
+
+.widget-container header h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* toggle  */
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: var(--widget-bg);
+  /* subtle card-background behind the icon */
+  border: none;
+  padding: 8px;
+  /* give it some hit-area */
+  border-radius: 50%;
+  /* round button */
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--page-text);
+  z-index: 10000;
+  /* always on top */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+
+/* ── Authors Widget ───────────────────────────────────────────────────────── */
+.authors-widget {
+  background-color: var(--widget-bg);
+  color:            var(--widget-text);
+  border:           1px solid var(--widget-border);
+  outline:          2px solid var(--widget-outline);
+  border-radius:    8px;
+  padding:          32px 24px;
+  margin:           0 auto 24px;
+  max-width:        960px;
+  text-align:       center;
+}
+
+/* Title */
+.authors-widget .paper-title {
+  margin:    0 0 16px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Author line */
+.authors-widget .authors-list {
+  margin:      0 0 12px;
+  font-size:   1.1rem;
+  line-height: 1.4;
+}
+.authors-widget sup {
+  font-size: 0.8rem;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+/* Affiliations & Emails */
+.authors-widget .affiliations,
+.authors-widget .emails {
+  margin:    4px 0;
+  font-size: 0.9rem;
+  color:     var(--widget-text);
+}
+.authors-widget .emails a {
+  color:            var(--widget-text);
+  text-decoration:  none;
+}
+.authors-widget .emails a:hover {
+  text-decoration: underline;
+}
+
+/* Equal‐contribution note */
+.authors-widget .equal-note {
+  margin:        12px 0;
+  font-style:    italic;
+  color:         var(--widget-text);
+}
+
+/* Presentation pins */
+.authors-widget .presentations {
+  list-style:     none;
+  padding:        0;
+  margin:         16px 0 0;
+}
+.authors-widget .presentations li {
+  display:        inline-flex;
+  align-items:    center;
+  margin:         6px 12px;
+  font-size:      0.95rem;
+  color:          var(--widget-text);
+}
+.authors-widget .presentations li i {
+  margin-right:   6px;
+  color:          var(--widget-outline);
+}
+
+
+.paper-info-widget h3 a {
+  color: var(--widget-text);
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.paper-info-widget h3 a:hover {
+  color: #c0392b;
+}
+.paper-info-widget h4 {
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+  color: var(--widget-text);
+}
+.paper-info-widget pre {
+  background: #438bb5;
+  color: #f8f8f2;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.96em;
+  overflow-x: auto;
+  margin: 0 0 16px 0;
+}
+.paper-info-widget code {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+
+.paper-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.arxiv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75em;
+  background: linear-gradient(90deg, #a62b2b 0%, #d4551d 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2em;
+  padding: 0.6em 1.4em;
+  box-shadow: 0 2px 8px rgba(30, 20, 30, 0.08);
+  font-size: 1.12rem;
+  letter-spacing: 0.01em;
+  transition: background 0.22s, transform 0.12s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.arxiv-link:hover,
+.arxiv-link:focus {
+  background: linear-gradient(90deg, #d4551d 0%, #a62b2b 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 18px rgba(166, 43, 43, 0.13);
+  text-decoration: none;
+}
+.arxiv-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #a62b2b;
+  border-radius: 50%;
+  width: 2.1em;
+  height: 2.1em;
+  font-size: 1.5em;
+  box-shadow: 0 2px 8px rgba(166, 43, 43, 0.10);
+}
+.arxiv-label {
+  font-size: 1.08em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.external-link-icon {
+  margin-left: 0.4em;
+  color: #fff9;
+  font-size: 1em;
+}
+.arxiv-link:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 5px rgba(166,43,43,0.10);
+}
+
+
+.card-widget {
+  background-color: var(--widget-bg);
+  border: 1px solid var(--widget-border);
+  outline: 2px solid var(--widget-outline);
+  color: var(--widget-text);
+  border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+  padding: 16px;
+  margin: 60px auto 24px;
+  max-width: 960px;
+}
+
+/* Other widget containers are now flat */
+.widget-container:not(.card-widget) {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: var(--widget-text);
+  border-radius: 0;
+  padding: 0 0 24px 0;
+  margin: 0 auto 24px;
+  max-width: 960px;
+}
