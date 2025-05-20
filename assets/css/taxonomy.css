@@ -1,0 +1,37 @@
+  /* .node circle {
+    cursor: pointer;
+    stroke: #3182bd;
+    stroke-width: 1.5px;
+  } */
+  .node circle {
+    cursor: pointer;
+  }
+  .node text {
+    font: 14px sans-serif;
+  }
+  .link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+  }
+  /* Tooltip styling */
+  .tooltip {
+    position: absolute;
+    text-align: left;
+    width: 280px;
+    padding: 10px;
+    font: 13px sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    pointer-events: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+  .highlighted-entity {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  
